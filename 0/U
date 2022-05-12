@@ -1,0 +1,116 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    location    "0";
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform (-0.35 -1.97 0);
+    }   
+
+    outlet_side_1
+    {
+        type            zeroGradient;
+        value           uniform (0 0 0);
+    }
+    
+    outlet_side_2
+    {
+        type            zeroGradient;
+        value           uniform (0 0 0);
+    }
+    
+    outlet_side_3
+    {
+        type            zeroGradient;
+        value           uniform (0 0 0);
+    }
+    
+    outlet_side_4
+    {
+        type            zeroGradient;
+        value           uniform (0 0 0);
+    }
+    
+    outlet_side_5
+    {
+        type            zeroGradient;
+        value           uniform (0 0 0);
+    }
+    
+    outlet_side_6
+    {
+        type            zeroGradient;
+        value           uniform (0 0 0);
+    }
+    
+    outlet_side_7
+    {
+        type            zeroGradient;
+        value           uniform (0 0 0);
+    }
+    
+    outlet_side_8
+    {
+        type            zeroGradient;
+        value           uniform (0 0 0);
+    }
+	
+	workpiece
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+	
+    front
+    {
+       type            fixedValue;
+       value           uniform (0 0 0);
+    }
+	
+    tool
+    {
+       type            fixedValue;
+       value           uniform (0 0 0);
+    }
+    
+    wall
+    {
+      type            fixedValue;
+      value           uniform (0 0 0);
+    }
+
+   outlet
+   {
+       type            fixedValue;
+       value           uniform (0 0 0);
+   }
+
+   back
+   {
+       type            empty;
+       
+   }
+}
+
+
+// ************************************************************************* //

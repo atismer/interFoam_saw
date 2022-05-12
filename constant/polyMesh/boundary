@@ -1,0 +1,128 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2112                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+15
+(
+    back
+    {
+        type            empty;
+        physicalType    empty;
+        nFaces          11127;
+        startFace       364118;
+    }
+    workpiece
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          1404;
+        startFace       375245;
+    }
+    tool
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          154;
+        startFace       376649;
+    }
+    wall
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          840;
+        startFace       376803;
+    }
+    inlet
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          63;
+        startFace       377643;
+    }
+    outlet
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          91;
+        startFace       377706;
+    }
+    front
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          11127;
+        startFace       377797;
+    }
+    outlet_side_1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          78;
+        startFace       388924;
+    }
+    outlet_side_2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          54;
+        startFace       389002;
+    }
+    outlet_side_3
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          78;
+        startFace       389056;
+    }
+    outlet_side_4
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          234;
+        startFace       389134;
+    }
+    outlet_side_5
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          54;
+        startFace       389368;
+    }
+    outlet_side_6
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          114;
+        startFace       389422;
+    }
+    outlet_side_7
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          294;
+        startFace       389536;
+    }
+    outlet_side_8
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          78;
+        startFace       389830;
+    }
+)
+
+// ************************************************************************* //
