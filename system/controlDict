@@ -45,11 +45,11 @@ timePrecision   6;
 
 runTimeModifiable true;
 
-adjustTimeStep off;
+adjustTimeStep on;
 
-maxCo	        10;
-maxAlphaCo	    10;
-maxDeltaT	    0.1;
+maxCo	        1.0;
+maxAlphaCo      1.0;
+maxDeltaT       0.1;
 
 
 
