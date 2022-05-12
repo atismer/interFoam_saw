@@ -24,7 +24,7 @@ boundaryField
 {
     back
     {
-        type            empty;
+        type            slip;
     }
     workpiece
     {

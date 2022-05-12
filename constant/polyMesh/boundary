@@ -20,8 +20,8 @@ FoamFile
 (
     back
     {
-        type            empty;
-        physicalType    empty;
+        type            patch;
+        physicalType    patch;
         nFaces          11127;
         startFace       364118;
     }
