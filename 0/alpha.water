@@ -40,32 +40,8 @@ boundaryField
     }
     inlet
     {
-        type            groovyBC;
-        refValue        uniform 1;
-        refGradient     uniform 0;
-        valueFraction   uniform 1;
-        source          uniform 0;
+        type            fixedValue;
         value           uniform 1;
-        valueExpression "1.0";
-        gradientExpression "0";
-        fractionExpression "1";
-        evaluateDuringConstruction 0;
-        cyclicSlave     0;
-        variables       
-4
-(
-"pOne=1.e-3*vector(3.5,5.1,0.1);"
-"pTwo=1.e-3*vector(4.6,5.1,0.1);"
-"pMid=0.5*(pOne+pTwo);"
-"ww=1.0-mag(pos()-pMid)/mag(pOne-pTwo)/0.5;"
-)
-;
-        timelines       (
-);
-        lookuptables    (
-);
-        lookuptables2D  (
-);
     }
     outlet
     {
